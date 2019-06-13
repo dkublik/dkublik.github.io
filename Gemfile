@@ -33,4 +33,4 @@ gem "jekyll-sitemap"
 gem "jekyll-gist"
 gem "jemoji"
 gem "jekyll-include-cache"
-gem "plainwhite"
+

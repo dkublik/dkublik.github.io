@@ -31,7 +31,7 @@ github_username:  jekyll
 markdown: kramdown
 #theme: minima
 # theme: plainwhite
-remote_theme: Sylhare/Type-on-Strap
+remote_theme: dkublik/Type-on-Strap
 
 paginate: 20
 paginate_path: "blog/page:num"
