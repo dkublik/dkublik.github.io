@@ -3,6 +3,9 @@ layout: post
 title: Spring I/O 2015 Barcelona
 comments: true
 tags: [conference, impressions]
+feature-img: "/assets/img/2015-04-11-springio/hotel_2.jpg"
+thumbnail: "/assets/img/2015-04-11-springio/hotel_2.jpg"
+image: "/assets/img/2015-04-11-springio/hotel_2.jpg"
 ---
 
 Few days ago 4F company gave me an opportunity to participate in Spring I/O conference in Barcelona.  
