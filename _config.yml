@@ -25,6 +25,7 @@ github_username:  dkublik
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 remote_theme: dkublik/Type-on-Strap
 
 paginate: 20
@@ -47,6 +48,14 @@ theme_settings:
   github: dkublik
   linkedin: https://www.linkedin.com/in/dawid-kublik-5366422/
   twitter: dawidkublik
+
+  # Sharing options
+  share_buttons:
+    facebook: true
+    twitter: true
+
+  google_analytics: UA-112685956-1
+  disqus_shortname: dkublikgithubio
 
 plugins:
   - jekyll-feed
