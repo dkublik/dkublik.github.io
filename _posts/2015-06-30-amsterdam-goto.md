@@ -46,7 +46,4 @@ Booking.com and Spotify gave away simple recipe for a good presentation: astonis
 I hope to see more presentation like that in the future. Who knows - maybe we live to see a conference where general 'solution' track is replaced by 'real life production solution' topics. Hope to see it :).
 
 &nbsp;
-****
-
-
 

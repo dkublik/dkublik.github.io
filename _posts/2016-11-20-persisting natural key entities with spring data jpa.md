@@ -236,3 +236,4 @@ Now, extending _Persistable_ with _Worker_ is not needed, as _workerRepository.p
 Full Examples can be found: [here](https://github.com/dkublik/sd-natural-keys).
 
 &nbsp;
+

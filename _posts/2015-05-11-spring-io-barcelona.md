@@ -51,7 +51,4 @@ Spring I/O - I liked it. How could one not. With everything above said it was wo
 ![Lunch break]({{ "/assets/img/2015-04-11-springio/hotel_1.jpg" | relative_url}})
 
 &nbsp;
-****
-
-
 

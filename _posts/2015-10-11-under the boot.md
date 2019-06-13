@@ -132,7 +132,4 @@ Dependencies are summarized on diagram below.
 Showcase project can be found ["here"](https://github.com/dkublik/under-the-boot).
 
 &nbsp;
-****
-
-
 

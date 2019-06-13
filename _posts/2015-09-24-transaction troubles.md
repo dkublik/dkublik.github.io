@@ -162,7 +162,4 @@ and to achieve it we only need to change propagation to *REQUIRES_NEW* in _Summa
 You can check the demo code ["here"](https://github.com/dkublik/transaction-troubles)
 
 &nbsp;
-****
-
-
 

@@ -301,3 +301,4 @@ pl.dk.loaderplay.ClassesFirstJarLauncher
 Again you may check the code [here](https://github.com/dkublik/spring-boot-loader-play)
 
 &nbsp;
+
