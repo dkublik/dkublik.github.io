@@ -2,6 +2,7 @@
 layout: post
 title: GOTO Amsterdam 2015
 comments: true
+tags: [conference, impressions]
 ---
 
 Amsterdam gave me a taste of everything - I guess this is what this city is about :).  
@@ -27,7 +28,7 @@ I know that logging and gathering the data is important, but was totally impress
 It's a lot to process and a lot to track. Damien reminded us of the importance of visualisation showing their graphs and dashboards.
 Also showed that with that volume of data we need to rediscover things that we took for granted: json may not be efficient enough for communication, events may need to be aggregated before storing, data distribution encounters network capacity problems.
 
-![Events storage and analysis with Riak at Booking.com]({{ site.baseurl }}/images/2015-06-30-amsterdam-goto/booking.jpg "Events storage and analysis with Riak at Booking.com")
+![Events storage and analysis with Riak at Booking.com]({{ "/assets/img/2015-06-30-amsterdam-goto/booking.jpg" | relative_url}})
 
 &nbsp;
 
@@ -35,7 +36,7 @@ Still being under the impression of Booking.com presentation I was totally aston
 So what can they do with that amount of data? Josh and Rafał were kind to explain.
 For once - they can learn user's behaviour and adopt their services. It's obvious that Spotify gives song proposals based on your historic choices but also learns your behaviour - that you may prefer hard rock during morning jogging, jazz at a lunch time and classical music when laying in bed. They choose commercials so they are in the same mood like the music you are listening to and with newest feature they can propose your favourite songs matched to your speed rate when running. The power of data.
 
-![The Evolution of Hadoop at Spotify - Through Failures and Pain]({{ site.baseurl }}/images/2015-06-30-amsterdam-goto/spotify.jpg "The Evolution of Hadoop at Spotify - Through Failures and Pain")
+![The Evolution of Hadoop at Spotify - Through Failures and Pain]({{ "/assets/img/2015-06-30-amsterdam-goto/spotify.jpg" | relative_url}})
 
 &nbsp;
 

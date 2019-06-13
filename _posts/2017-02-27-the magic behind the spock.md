@@ -2,6 +2,7 @@
 layout: post
 title: The Magic Behind the Spock
 comments: true
+tags: [java, groovy, spock, spring-boot, inner-workings]
 ---
 Spock rulez. Writing tests has never been simpler and more pleasant. All thanks to concise and informative syntax. But how is Spock syntax made possible?
 

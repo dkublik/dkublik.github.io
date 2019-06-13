@@ -2,6 +2,7 @@
 layout: post
 title: Persisting Natural Key Entities with Spring Data JPA
 comments: true
+tags: [java, jpa, hibernate, spring-data, spring-boot]
 ---
 From the dawn of time there is an ongoing discussion about using [surrogate keys](https://en.wikipedia.org/wiki/Surrogate_key) vs [natural keys](https://en.wikipedia.org/wiki/Natural_key) in your database tables. 
 I don't want to take any side here - just write about one consequence you'll face when persisting natural key entity with Spring Data repository.
@@ -96,7 +97,7 @@ However _entityInformation.isNew(entity)_ is as simple as assuming that an entit
 Of course with a framework like Spring there is a way to handle it. In [documentation](http://docs.spring.io/spring-data/jpa/docs/1.10.5.RELEASE/reference/html/#jpa.entity-persistence.saving-entites) we can read about options for detection whether an entity is new or not:
 
 
-![isNew() detection]({{ site.baseurl }}/images/2016-11-20-natural-key-persist/isNewDetection.png "isNew() detection")
+![isNew() detection]({{ "/assets/img/2016-11-20-natural-key-persist/isNewDetection.png" | relative_url}})
 
 
 Since option 3 is discouraged (I don't think that natural key is that rare thing) let's try to go with 2nd.

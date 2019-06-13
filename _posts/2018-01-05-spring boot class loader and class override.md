@@ -2,6 +2,7 @@
 layout: post
 title: Spring Boot ClassLoader and Class Override
 comments: true
+tags: [java, spring-boot, inner-workings, classloaders]
 ---
 Article explains the Spring Boot classloader (_LaunchedURLClassLoader_) and a way to temporarily override library classes with your custom ones.
 
@@ -24,7 +25,7 @@ Les's just take the class (with the package) and paste is into our project (_src
 
 Now let's run the App from IDE and everything seems to work
 
-![Working Fix in an IDE]({{ site.baseurl }}/images/2018-01-06-spring-boot-class-loader/banner-ide-working.png "Working Fix in an IDE")
+![Working Fix in an IDE]({{ "/assets/img/2018-01-06-spring-boot-class-loader/banner-ide-working.png" | relative_url}})
 
 &nbsp;
 
@@ -40,7 +41,7 @@ java -jar spring-boot-loader-play-0.0.1-SNAPSHOT.jar
 Original banner is still being displayed, and this is not about a terminal not suporting ANSI colors.  
 The banner class (_SpringBootBanner_) was simply not overriden.
 
-![Not Working Fix When Running Jar]({{ site.baseurl }}/images/2018-01-06-spring-boot-class-loader/banner-jar-not-working.png "Not Working Fix When Running Jar")
+![Not Working Fix When Running Jar]({{ "/assets/img/2018-01-06-spring-boot-class-loader/banner-jar-not-working.png" | relative_url}})
 
 &nbsp;
 
@@ -264,7 +265,7 @@ pl.dk.loaderplay.ClassesFirstJarLauncher
 
 When doing so the class was finally overriden:
 
-![Working Fix When Running Jar]({{ site.baseurl }}/images/2018-01-06-spring-boot-class-loader/banner-jar-working.png "Working Fix When Running Jar")
+![Working Fix When Running Jar]({{ "/assets/img/2018-01-06-spring-boot-class-loader/banner-jar-working.png" | relative_url}})
 
 &nbsp;
 

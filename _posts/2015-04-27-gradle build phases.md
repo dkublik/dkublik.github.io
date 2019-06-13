@@ -2,6 +2,7 @@
 layout: post
 title: Gradle Build Phases
 comments: true
+tags: [gradle, build]
 ---
 
 Always hungry for changes, some time ago 4F company moved from Maven to Gradle.
@@ -40,13 +41,13 @@ with unexpected outcome: new **version.info** created though no jar file was bui
 
 With **gradle build** situation is trivial cause **build** task indirectly depends on **createVersionFile** task
 
-![gradle build dependencies]({{ site.baseurl }}/images//2015-4-27-gradle-build-phases/gradle-build-tr.png "gradle build dependencies")
+![gradle build dependencies]({{ "/assets/img/2015-04-27-gradle-build-phases/gradle-build-tr.png" | relative_url}})
 
 &nbsp;
 
 But suprisingly with **gradle test** no such dependency exists.
-
-![gradle test dependencies]({{ site.baseurl }}/images//2015-4-27-gradle-build-phases/gradle-test-tr.png "gradle test dependencies")  
+ 
+![gradle test dependencies]({{ "/assets/img/2015-04-27-gradle-build-phases/gradle-test-tr.png" | relative_url}})
 
 &nbsp;
 

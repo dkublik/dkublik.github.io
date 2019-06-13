@@ -2,6 +2,7 @@
 layout: post
 title: Under The Boot
 comments: true
+tags: [java, spring-boot, inner-workings]
 ---
 
 Remember the times when we had to register dispatchers, viewResolvers, etc. to make our spring application web-app? Then there was _@EnableWebMvc_ annotation and now even this is redundant.  
@@ -80,7 +81,7 @@ public class Application {
 
 If you check _spring-boot-autoconfigure.jar/META-INF/spring.factories_ you'll find out _org.springframework.boot.autoconfigure.EnableAutoConfiguration_ property which specifies which auto configurations will be used to 'guess' and create beans you require.
 
-![autoconfigurations]({{ site.baseurl }}/images/2015-10-11-under-the-boot/autoconfigurations.png "autoconfigurations")
+![autoconfigurations]({{ "/assets/img/2015-10-11-under-the-boot/autoconfigurations.png" | relative_url}})
 
 &nbsp;
 
@@ -124,7 +125,7 @@ Everything seems to work now. 54 beans loaded by spring. Among them:
 
 Dependencies are summarized on diagram below.
 
-![dependencies]({{ site.baseurl }}/images/2015-10-11-under-the-boot/dbdeps.png "dependencies")
+![dependencies]({{ "/assets/img/2015-10-11-under-the-boot/dbdeps.png" | relative_url}})
 
 &nbsp;
 

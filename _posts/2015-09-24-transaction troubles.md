@@ -2,6 +2,7 @@
 layout: post
 title: Transaction Troubles
 comments: true
+tags: [java, jpa, hibernate, inner-workings]
 ---
 
 Recently I've faced an interesting issue. Got transactional method saving entity to the database - method is called, no exception is thrown - but no data is stored into the db.
@@ -34,7 +35,7 @@ So the expected flow in this case goes as follows:
 3. external transaction is present, so createSummary transaction (let's call it internal transaction) joins it, as propagation was not specified and default one is _Propagation.REQUIRED_
 4. Only one commit is expected - the one from the external transaction.
 
-![expected transaction flow]({{ site.baseurl }}/images//2015-09-2-transactions-trouble/trans1.png "expected transaction flow")
+![expected transaction flow]({{ "/assets/img/2015-09-2-transactions-trouble/trans1.png" | relative_url}})
 
 &nbsp;
 
@@ -126,7 +127,7 @@ we will see the following steps:
 
 so what we achieved with our code was:
 
-![actual transaction flow]({{ site.baseurl }}/images//2015-09-2-transactions-trouble/trans2.png "actual transaction flow")
+![actual transaction flow]({{ "/assets/img/2015-09-2-transactions-trouble/trans2.png" | relative_url}})
 
 &nbsp;
 
@@ -154,7 +155,7 @@ and to achieve it we only need to change propagation to *REQUIRES_NEW* in _Summa
     }
 ```  
 
-![corrected transaction flow]({{ site.baseurl }}/images//2015-09-2-transactions-trouble/trans3.png "corrected transaction flow")
+![corrected transaction flow]({{ "/assets/img/2015-09-2-transactions-trouble/trans3.png" | relative_url}})
 
 &nbsp;
 

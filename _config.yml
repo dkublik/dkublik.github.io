@@ -13,28 +13,40 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-#repository: mmistakes/minimal-mistakes
+title: dk
+email: dkublik@gmail.com
+description: 
+  softwareArchitect@ViacomTech
+baseurl: ""
+url: "https://dkublik.github.io"
+twitter_username: dkublik
+github_username:  dkublik
 
-#github: [metadata]
 
 # Build settings
 markdown: kramdown
-#theme: minima
-# theme: plainwhite
 remote_theme: dkublik/Type-on-Strap
 
 paginate: 20
 paginate_path: "blog/page:num"
+
+theme_settings:
+  # Meta
+  avatar: assets/img/fallout140.png
+  favicon: assets/favicon.ico
+
+  # Header and footer text
+  header_text: <br/> 
+  header_feature_image: assets/img/pexels/triangular.jpeg
+  footer_text: >
+    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+
+  # Icons
+  rss: true
+  email_address: dkublik@github.com
+  github: dkublik
+  linkedin: https://www.linkedin.com/in/dawid-kublik-5366422/
+  twitter: dawidkublik
 
 plugins:
   - jekyll-feed

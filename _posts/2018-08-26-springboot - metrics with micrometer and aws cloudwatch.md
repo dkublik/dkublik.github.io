@@ -2,6 +2,7 @@
 layout: post
 title: SpringBoot - Metrics with Micrometer and AWS CloudWatch
 comments: true
+tags: [java, spring-boot, spring-cloud, metrics, micrometer]
 ---
 Some time ago I wrote a blog about how to configure CloudWatch metrics Spring Boot. It was all before micrometer and depended on Netflix Servo Metrics.
 Time was slowly passing and civilizations prospered but it's still difficult to find info on how to make Spring Boot work with Micrometer CloudWatch.  
@@ -82,8 +83,7 @@ management.metrics.export.cloudwatch.namespace=m3trics2
 
 As name suggests - property names the custom CloudWatch namespace where you will find your metrics.
 
-![Registered Metrics namespace]({{ site.baseurl }}/images/2018-08-26-springboot-metrics2/cw-custom-namespace.png "Registered Metrics namespace in CloudWatch")
-
+![Registered Metrics namespace]({{ "/assets/img/2018-08-26-springboot-metrics2/cw-custom-namespace.png" | relative_url}})
 &nbsp;
 
 
@@ -106,19 +106,19 @@ It's a super simple web application generating random number every time a partic
 App demonstrates that dozens of metrics are added automatically by Spring Boot - like:
 * http.server.requests.avg - how long it took on average in one minute to respond with lucky number,
 
-![90th percentile for endpoint reponse time]({{ site.baseurl }}/images/2018-08-26-springboot-metrics2/metric-avg.png "90th percentile for endpoint reponse time")
+![90th percentile for endpoint reponse time]({{ "/assets/img/2018-08-26-springboot-metrics2/metric-avg.png" | relative_url}})
 
 &nbsp;
 
 * http.server.requests.count - how many requests where made in one minute
 
-![Number of requests in one minute]({{ site.baseurl }}/images/2018-08-26-springboot-metrics2/metric-count.png "Number of requests in one minute")
+![Number of requests in one minute]({{ "/assets/img/2018-08-26-springboot-metrics2/metric-count.png" | relative_url}})
 
 &nbsp;
 
 I also added one custom metric - _luckies.current_ (check [LuckyNumbersController](https://github.com/dkublik/micrometer-aws-example/blob/master/src/main/java/pl/dk/m3trics2/LuckyNumbersController.java)) which just stores last lucky number that was generated.
 
-![Last generated lucky number]({{ site.baseurl }}/images/2018-08-26-springboot-metrics2/metric-current-lucky.png "Last generated lucky number")  
+![Last generated lucky number]({{ "/assets/img/2018-08-26-springboot-metrics2/metric-current-lucky.png" | relative_url}})
 
 (keep in mind that not all generated numbers will be sent to CloudWatch - as gauge metric used here is probed peridically - details can again be found in [micrometer docs](https://micrometer.io/docs/concepts#_gauges))
 

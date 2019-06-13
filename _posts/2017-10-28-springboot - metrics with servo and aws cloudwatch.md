@@ -2,6 +2,7 @@
 layout: post
 title: SpringBoot - Metrics with Servo and AWS CloudWatch
 comments: true
+tags: [java, spring-boot, spring-cloud, metrics, micrometer]
 ---
 Article explains how to send Spring Boot and Netflix Servo metrics to AWS CloudWatch.
 Morover it describes mechanisms making it happen.
@@ -183,12 +184,12 @@ Now access different endpoints in app and with few seconds delay you will be abl
 
 Log to the AWS Console, and go to CloudWatch -> m3trics (which we set as namespace)
 
-![Registered Metrics namespace]({{ site.baseurl }}/images/2017-10-28-springboot-metrics/namespace.png "Registered Metrics namespace in CloudWatch")
+![Registered Metrics namespace]({{ "/assets/img/2017-10-28-springboot-metrics/namespace.png" | relative_url}})
 Registered Metrics namespace in CloudWatch
 
 &nbsp;
 
-![Spring Boot basic metrics in CloudWatch]({{ site.baseurl }}/images/2017-10-28-springboot-metrics/basic-metrics.png "Spring Boot basic metrics in CloudWatch")
+![Spring Boot basic metrics in CloudWatch]({{ "/assets/img/2017-10-28-springboot-metrics/basic-metrics.png" | relative_url}})
 Spring Boot basic metrics in CloudWatch
 
 &nbsp;
@@ -248,8 +249,7 @@ class SomeTrafficGenerator {
 
 Run the application one more time and enjoy plenty of new metrics in CloudWatch!
 
-![Hystrix metrics in CloudWatch]({{ site.baseurl }}/images/2017-10-28-springboot-metrics/hystrix-metrics.png "Hystrix metrics in CloudWatch")
-Hystrix metrics in CloudWatch
+![Hystrix metrics in CloudWatch]({{ "/assets/img/2017-10-28-springboot-metrics/hystrix-metrics.png" | relative_url}})
 
 &nbsp;
 

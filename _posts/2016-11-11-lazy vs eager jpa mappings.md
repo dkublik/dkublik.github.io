@@ -2,6 +2,7 @@
 layout: post
 title: Should I go Eager or Lazy with JPA mappings?
 comments: true
+tags: [java, jpa, hibernate, spring-data, spring-boot]
 ---
 The short answer is: go Lazy if you care about number of queries happening under the hood. _"But what if I always need a particular relation?"_ - still go lazy, here is why.
 
