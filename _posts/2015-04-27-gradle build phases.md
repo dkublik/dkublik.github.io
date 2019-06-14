@@ -4,7 +4,6 @@ title: Gradle Build Phases
 comments: true
 tags: [gradle, build]
 feature-img: "/assets/img/2015-04-27-gradle-build-phases/Gradle_Logo_large2.png"
-thumbnail: "/assets/img/2015-04-27-gradle-build-phases/Gradle_Logo2.png"
 image: "/assets/img/2015-04-27-gradle-build-phases/Gradle_Logo2.png"
 ---
 
