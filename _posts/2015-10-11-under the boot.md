@@ -3,6 +3,8 @@ layout: post
 title: Under The Boot
 comments: true
 tags: [java, spring-boot, inner-workings]
+thumbnail: "/assets/img/2015-10-11-under-the-boot/spring-banner.png"
+image: "/assets/img/2015-10-11-under-the-boot/spring-banner.png"
 ---
 
 Remember the times when we had to register dispatchers, viewResolvers, etc. to make our spring application web-app? Then there was _@EnableWebMvc_ annotation and now even this is redundant.  
