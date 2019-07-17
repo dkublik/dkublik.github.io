@@ -131,7 +131,7 @@ Check MeterBinder impelementation hierarchy and you will know what groups of met
 
 You can also check it directly in [micrometer repo](https://github.com/micrometer-metrics/micrometer/tree/master/micrometer-core/src/main/java/io/micrometer/core/instrument/binder).
 
-Open for example [EhCache2Metrics](https://github.com/micrometer-metrics/micrometer/blob/master/micrometer-core/src/main/java/io/micrometer/core/instrument/binder/cache/EhCache2Metrics.java), and you will find what and how _Ehcache_ statistics are mapped specific micrometer metrics
+Open for example [EhCache2Metrics](https://github.com/micrometer-metrics/micrometer/blob/master/micrometer-core/src/main/java/io/micrometer/core/instrument/binder/cache/EhCache2Metrics.java), and you will find what and how _Ehcache_ statistics are mapped to specific Micrometer metrics
 
 ```
 cache.size -> StatisticsGateway:getSize
