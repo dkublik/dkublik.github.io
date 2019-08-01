@@ -124,7 +124,7 @@ I also added one custom metric - _luckies.current_ (check [LuckyNumbersControlle
 
 &nbsp;
 
-Again you may check the code [here](https://github.com/dkublik/m3trics)
+Again you may check the code [here](https://github.com/dkublik/micrometer-aws-example)
 
 &nbsp;
 
